@@ -1,9 +1,8 @@
 
 let baseUrl = 'https://jsonplaceholder.typicode.com'
 
-let request = (options = { url, method: 'GET', data: {}, tapName: '加载中' }) => {
-    console.log(options)
-    let { url, method, data, tapName = '加载中' } = options
+let request = (options ) => {
+    let { url, method = 'GET', data = {}, tapName = '加载中' } = options
     let header = {}
     if (wx.getStorageSync('token')) {
         header.token = wx.getStorageSync('token')  //登录后拿到token值
@@ -16,6 +15,7 @@ let request = (options = { url, method: 'GET', data: {}, tapName: '加载中' })
         wx.request(Object.assign({}, {
             method,
             header,
+            data,
             url: options.url.substring(0, 1) === '/' ? `${baseUrl}${url}` : `${url}`,
             success(res) {
                 if (res.statusCode == 200) {

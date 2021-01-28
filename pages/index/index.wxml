@@ -1,5 +1,5 @@
 <!-- index.wxml -->
 <view class="container">
   <van-button type="primary" bind:tap="fetchData">按钮</van-button>
-  <van-button type="primary" bind:tap="fetchPost">获取post</van-button>
+  <van-button type="primary" bind:tap="fetchPost" style="margin-top:20px">获取post</van-button>
 </view>
