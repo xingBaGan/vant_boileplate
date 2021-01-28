@@ -1,0 +1,9 @@
+<!-- pages/event.wxml -->
+<view id="outer" mut-bind:tap="handleTap1">
+    outer view
+    <view id="middle" bindtap="handleTap2">
+        middle view
+        <view id="inner" mut-bind:tap="handleTap3">inner view</view>
+    </view>
+</view>
+<view id="single" mut-bind:tap="handleTap3">inner view</view>

@@ -1,0 +1,6 @@
+<!-- pages/test/test.wxml -->
+<view class="" hover-class="none" hover-stop-propagation="false">
+    <text>pages/test/test.wxml</text>
+    <my-Text bind:trigger="fetchData"></my-Text>
+    <selector></selector>
+</view>

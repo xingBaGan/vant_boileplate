@@ -1,0 +1,4 @@
+<view class="" hover-class="none" hover-stop-propagation="false">
+    <text class="blue">components/selector.wxml</text>
+    <button type="primary" bindtap="trigger">页面主操作 Normal</button>
+</view>

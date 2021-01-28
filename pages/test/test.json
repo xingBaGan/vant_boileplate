@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-Text": "../../components/myText/myText",
+    "selector": "../../components/selector/selector"
+  }
+}
